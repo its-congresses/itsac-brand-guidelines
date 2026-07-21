@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Module 3f · F · T/B/Y/G">
   <defs><clipPath id="tile"><rect width="240" height="240"/></clipPath></defs>
-  <g clip-path="url(#tile)" transform="translate(-480 0)">
+  <g clip-path="url(#tile)"><g transform="translate(-480 0)">
     <svg width="1200" height="240" viewBox="0 0 1200 240">
 
   <title>F · T/B/Y/G</title>
@@ -17,5 +17,5 @@
   <path d="M1080 40L1160 120 1080 200 1000 120Z" fill="#F2EBDA"/>
 
     </svg>
-  </g>
+  </g></g>
 </svg>

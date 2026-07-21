@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ITSAC email signature example</title>
+  <title>ITSAC email signature</title>
   <style>
     body{margin:0;padding:32px;background:#fff;font-family:Arial,Helvetica,sans-serif;color:#1A1A1A}
-    .note{max-width:680px;margin:0 auto 28px;padding:14px 18px;background:#F2EBDA;border-left:5px solid #1E4C9A;font-size:14px;line-height:1.5}
+    .note{max-width:680px;margin:0 auto 20px;padding:14px 18px;background:#F2EBDA;border-left:5px solid #1E4C9A;font-size:14px;line-height:1.5}
+    .toolbar{max-width:680px;margin:0 auto 24px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .copy-btn{appearance:none;border:0;background:#1E4C9A;color:#fff;font-family:inherit;font-weight:bold;font-size:14px;padding:11px 20px;border-radius:4px;cursor:pointer}
+    .copy-btn:hover{background:#173d7d}
+    .copy-ok{font-size:13px;color:#2E7D4F;font-weight:bold;display:none}
     .signature-wrap{max-width:680px;margin:0 auto}
     @media(max-width:620px){body{padding:18px}.signature-table,.signature-table tbody,.signature-table tr,.signature-table td{display:block!important;width:100%!important}.identity{padding:18px 0 0!important;border-left:0!important;border-top:2px solid #1E4C9A!important}}
   </style>
 </head>
 <body>
-  <p class="note"><strong>Example signature.</strong> This demonstrates the approved structure using ITS Global's shared contact details. Replace only the person's name, role and direct contact details. Before rolling out, the three images must be hosted at a public URL (not behind a sign-in) or embedded by your email client — otherwise recipients will see broken images.</p>
-  <div class="signature-wrap">
+  <p class="note"><strong>How to use:</strong> click <strong>Copy signature</strong>, paste into your email settings (Gmail: Settings &rarr; See all settings &rarr; Signature. Outlook: Settings &rarr; Signatures), then type over the name, role, phone and email with your own. Change nothing else. The images are hosted on the brand site, so they display for every recipient automatically.</p>
+  <div class="toolbar">
+    <button class="copy-btn" id="copyBtn" type="button">Copy signature</button>
+    <span class="copy-ok" id="copyOk">Copied. Now paste it into your email settings.</span>
+  </div>
+  <div class="signature-wrap" id="signature">
     <table class="signature-table" role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:680px;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#1A1A1A">
       <tr>
         <td style="width:230px;padding:0 24px 0 0;vertical-align:middle">
-          <img src="../assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" width="210" alt="ITS Africa Conference 2027" style="display:block;width:210px;max-width:100%;height:auto;border:0">
+          <img src="https://its-congresses.github.io/itsac-brand-guidelines/assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" width="210" alt="ITS Africa Conference 2027" style="display:block;width:210px;max-width:100%;height:auto;border:0">
         </td>
         <td class="identity" style="padding:4px 0 4px 24px;border-left:2px solid #1E4C9A;vertical-align:middle">
           <div style="font-size:20px;line-height:1.15;font-weight:700;color:#1A1A1A">Elize Lochenberg</div>
@@ -31,15 +39,35 @@
       </tr>
       <tr>
         <td colspan="2" style="padding-top:18px">
-          <img src="../assets/banners/ITSAC27_organiser-banner_with-event-logo_2x.png" width="680" alt="Organised by ITS Global, hosted by City of Cape Town, content partner ERTICO" style="display:block;width:100%;max-width:680px;height:auto;border:0">
+          <img src="https://its-congresses.github.io/itsac-brand-guidelines/assets/banners/ITSAC27_organiser-banner.png" width="680" alt="Organised by ITS Global, hosted by City of Cape Town, content partner ERTICO" style="display:block;width:100%;max-width:680px;height:auto;border:0">
         </td>
       </tr>
       <tr>
         <td colspan="2" style="padding-top:10px">
-          <img src="itsac-email-signature-strip.png" width="680" height="44" alt="" aria-hidden="true" style="display:block;width:100%;max-width:680px;height:auto;border:0">
+          <img src="https://its-congresses.github.io/itsac-brand-guidelines/downloads/itsac-email-signature-strip.png" width="680" height="44" alt="" aria-hidden="true" style="display:block;width:100%;max-width:680px;height:auto;border:0">
         </td>
       </tr>
     </table>
   </div>
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', function () {
+      var sig = document.getElementById('signature');
+      var range = document.createRange();
+      range.selectNodeContents(sig);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      sel.removeAllRanges();
+      if (ok) {
+        var msg = document.getElementById('copyOk');
+        msg.style.display = 'inline';
+        setTimeout(function () { msg.style.display = 'none'; }, 4000);
+      } else {
+        alert('Copy failed. Select the signature manually and press Ctrl/Cmd+C.');
+      }
+    });
+  </script>
 </body>
 </html>
