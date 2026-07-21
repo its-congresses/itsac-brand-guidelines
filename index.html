@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.svg"><meta property="og:title" content="ITS Africa Conference 2027 — Brand Guidelines"><meta property="og:image" content="og.png"><title>ITS Africa Conference 2027 — Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+ --cream:#F2EBDA; --ink:#1A1A1A; --blue:#1E4C9A; --green:#2E7D4F; --terra:#BE4A2F;
+ --gold:#E8B93B; --grey:#54565B; --white:#fff;
+ --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,system-ui,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.08;margin:0}
+h2{font-weight:700;font-size:clamp(1.6rem,3.2vw,2.4rem)}
+h3{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+p{margin:.5rem 0}
+a{color:var(--blue)}
+.eyebrow{font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--grey)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+/* nav */
+nav{position:sticky;top:0;z-index:200;background:rgba(242,235,218,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e2d9c4}
+nav .wrap{display:flex;gap:6px;align-items:center;height:56px;flex-wrap:wrap}
+nav b{font-weight:700;margin-right:auto;letter-spacing:-.01em}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.82rem;padding:6px 10px;border-radius:999px}
+nav a:hover{background:#e7ddc7}
+/* hero */
+header.hero{padding:64px 0 0}
+.hero-inner{display:flex;flex-direction:column;gap:22px}
+.hero img{max-width:520px;width:70%}
+.hero h1{font-weight:900;font-size:clamp(2.4rem,6vw,4rem)}
+.hero .sub{font-weight:500;font-size:1.05rem;color:var(--grey);max-width:640px}
+.pill{display:inline-block;background:var(--blue);color:#fff;font-weight:600;font-size:.8rem;padding:7px 15px;border-radius:999px}
+.pill.gold{background:var(--gold);color:var(--ink)}
+/* sections */
+section{padding:56px 0;border-top:1px solid #e2d9c4}
+.grid{display:grid;gap:20px}
+.card{background:#fff;border:1px solid #eadfc8;border-radius:16px;padding:22px}
+.logo-tile{border-radius:16px;display:flex;align-items:center;justify-content:center;padding:26px;min-height:150px}
+.on-cream{background:var(--cream);border:1px solid #e2d9c4}
+.on-white{background:#fff;border:1px solid #eadfc8}
+.on-dark{background:var(--ink)}
+.on-blue{background:var(--blue)}
+.logo-tile img{max-height:120px;max-width:88%}
+.two{grid-template-columns:repeat(2,1fr)}
+.three{grid-template-columns:repeat(3,1fr)}
+.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:820px){.three,.four{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.two,.three,.four{grid-template-columns:1fr}}
+/* swatches */
+.sw{border-radius:14px;overflow:hidden;border:1px solid #eadfc8;cursor:pointer;background:#fff}
+.sw .chip{height:96px}
+.sw .meta{padding:12px 14px}
+.sw .meta b{display:block;font-size:.92rem}
+.sw .meta span{font-size:.76rem;color:var(--grey);font-variant-numeric:tabular-nums}
+.sw:hover{box-shadow:0 6px 20px rgba(0,0,0,.08)}
+/* type specimens */
+.spec{background:#fff;border:1px solid #eadfc8;border-radius:16px;padding:26px}
+.spec .row{padding:14px 0;border-bottom:1px dashed #eadfc8}
+.spec .row:last-child{border:0}
+.spec .lbl{font-size:.72rem;color:var(--grey);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.do{border-left:4px solid var(--green)} .dont{border-left:4px solid var(--terra)}
+.callout{background:#fff;border:1px dashed var(--terra);border-radius:14px;padding:18px 20px;color:var(--ink)}
+.callout b{color:var(--terra)}
+ul.clean{margin:.4rem 0;padding-left:1.1rem} ul.clean li{margin:.28rem 0}
+footer{background:var(--ink);color:#cfc9bd;padding:40px 0;font-size:.85rem}
+footer a{color:var(--gold)}
+.dl{display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.82rem;text-decoration:none;color:var(--blue);border:1px solid #d8e0ee;background:#fff;padding:8px 13px;border-radius:999px;margin:4px 6px 0 0}
+.dl:hover{background:#eef3fb}
+.note{font-size:.8rem;color:var(--grey)}
+.copyhint{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:.8rem;opacity:0;transition:.2s;pointer-events:none;z-index:400}
+.copyhint.show{opacity:1}
+/* approved modular pattern system */
+.brand-ribbon,.footer-pattern{background-repeat:repeat-x;background-position:center;background-size:auto 100%}
+.brand-ribbon{height:clamp(88px,11vw,132px);margin-top:44px;background-image:url('assets/pattern/outputs/row-1-colorway-system/a-original/a-original-master-strip.svg');border-top:1px solid rgba(26,26,26,.12);border-bottom:1px solid rgba(26,26,26,.12)}
+.footer-pattern{height:72px;background-image:url('assets/pattern/outputs/row-1-colorway-system/c-blue-led/c-blue-led-master-strip.svg')}
+.pattern-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:28px;align-items:end}
+.pattern-lead{font-size:1.08rem;max-width:720px;color:var(--grey)}
+.pattern-master{margin-top:28px;border:1px solid #d9cfba;border-radius:18px;overflow:hidden;background:var(--ink);box-shadow:0 16px 40px rgba(26,26,26,.08)}
+.pattern-master img{width:100%;display:block;aspect-ratio:5/1;object-fit:cover}
+.pattern-caption{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;background:var(--ink);color:var(--cream);font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.pattern-role-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.pattern-role{background:#fff;border:1px solid #eadfc8;border-radius:14px;padding:15px}
+.pattern-role i{display:block;width:22px;height:22px;border-radius:50%;margin-bottom:10px;border:1px solid rgba(26,26,26,.12)}
+.pattern-role b{display:block;font-size:.82rem}.pattern-role span{font-size:.72rem;color:var(--grey)}
+.pattern-module-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.pattern-module{margin:0;background:#fff;border:1px solid #eadfc8;border-radius:14px;overflow:hidden}
+.pattern-module img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.pattern-module figcaption{padding:10px 12px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.pattern-subhead{margin:40px 0 8px}
+.pattern-colourways{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.pattern-family{margin:0;background:var(--ink);border:1px solid #333;border-radius:14px;overflow:hidden;color:var(--cream)}
+.pattern-family img{display:block;width:100%;aspect-ratio:5/1;object-fit:cover}
+.pattern-family figcaption{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;font-size:.68rem;line-height:1.3}
+.pattern-family b{letter-spacing:.08em}.pattern-family span{color:#aaa49a;text-align:right}
+.pattern-examples{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.pattern-application{min-height:250px;border-radius:16px;overflow:hidden;padding:18px;display:flex;align-items:flex-end;background-size:cover;background-position:center;border:1px solid rgba(26,26,26,.12)}
+.pattern-application.a{background-image:url('assets/pattern/outputs/row-1-colorway-system/a-original/a-original-fullscreen-4k.png')}
+.pattern-application.b{background-image:url('assets/pattern/outputs/row-1-colorway-system/b-green-led/b-green-led-fullscreen-4k.png')}
+.pattern-application.d{background-image:url('assets/pattern/outputs/row-1-colorway-system/d-yellow-led/d-yellow-led-fullscreen-4k.png')}
+.pattern-message{width:100%;background:rgba(242,235,218,.96);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(26,26,26,.16)}
+.pattern-message b{display:block;font-size:1.12rem;line-height:1.1}.pattern-message span{font-size:.72rem;color:var(--grey)}
+.pattern-rule{display:flex;gap:12px;align-items:flex-start}.pattern-rule strong{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--cream);font-size:.78rem}
+.pattern-downloads{margin-top:24px;padding:22px;background:var(--blue);color:#fff;border-radius:16px}
+.pattern-downloads h3{color:#fff}.pattern-downloads p{color:#dbe6fa}.pattern-downloads .dl{border:0}
+@media(max-width:820px){.pattern-intro{grid-template-columns:1fr}.pattern-role-grid{grid-template-columns:repeat(2,1fr)}.pattern-examples{grid-template-columns:1fr}.pattern-application{min-height:200px}}
+@media(max-width:620px){.pattern-module-grid{grid-template-columns:repeat(2,1fr)}.pattern-colourways{grid-template-columns:1fr}.pattern-caption{flex-direction:column;gap:2px}}
+</style>
+<style id="site-polish">
+:root{--maxw:1180px;--line:#d8cdb7;--soft:#e9dfcb;--ease:cubic-bezier(.2,.8,.2,1)}
+html{scroll-padding-top:76px}
+body{font-size:16px;background:var(--cream)}
+a:focus-visible,button:focus-visible,.sw:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.wrap{padding-inline:clamp(22px,4vw,48px)}
+
+nav{background:rgba(26,26,26,.96);border:0;color:var(--cream);backdrop-filter:blur(14px)}
+nav .wrap{height:66px;max-width:none;padding-inline:clamp(18px,3vw,42px);flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav b{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;color:#fff}
+nav a{color:#dcd5c6;border-radius:2px;padding:9px 10px;white-space:nowrap;transition:color .18s var(--ease),background .18s var(--ease)}
+nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+
+header.hero{position:relative;padding:0;overflow:hidden;background:var(--cream)}
+.hero-inner{min-height:clamp(520px,68vh,720px);justify-content:center;align-items:flex-start;gap:20px;padding-top:70px;padding-bottom:74px;position:relative;z-index:1}
+.hero-inner:after{content:"";position:absolute;right:clamp(28px,5vw,72px);bottom:58px;width:clamp(96px,12vw,164px);aspect-ratio:1;background:var(--gold);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:.95;z-index:-1}
+.hero .eyebrow{color:var(--blue)}
+.hero-logo{display:block;width:min(650px,78vw);max-width:none;height:auto;mix-blend-mode:multiply;margin-bottom:10px}
+.hero h1{font-size:clamp(3.6rem,9vw,7.8rem);letter-spacing:-.055em;line-height:.84;max-width:9ch;color:var(--ink)}
+.hero .sub{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.6;max-width:720px;color:#4b4944}
+.pill{border-radius:2px;padding:8px 13px;letter-spacing:.02em}
+.brand-ribbon{margin:0;height:clamp(104px,12vw,158px);border:0;background-position:left center}
+
+section{padding:clamp(72px,9vw,116px) 0;border-top:1px solid var(--line);scroll-margin-top:66px}
+section:nth-of-type(even){background:rgba(255,255,255,.42)}
+section .eyebrow{display:block;margin-bottom:14px;color:var(--blue);font-weight:700}
+section h2{font-size:clamp(2.35rem,5vw,4.5rem);letter-spacing:-.045em;max-width:15ch;margin-bottom:18px}
+section>.wrap>.sub,section>.wrap>p.sub{font-size:1.08rem;line-height:1.7;max-width:760px;color:#55514a}
+h3{letter-spacing:-.015em}
+
+.grid{gap:clamp(16px,2vw,28px)}
+.card,.spec,.logo-tile,.sw,.pattern-role,.pattern-module,.pattern-family,.pattern-application,.pattern-master,.callout,.pattern-downloads{border-radius:4px}
+.card,.spec,.pattern-role,.pattern-module{border-color:var(--line)}
+.card{padding:clamp(20px,2.6vw,30px)}
+.logo-tile{min-height:180px;border-color:var(--line)}
+.logo-tile img{max-width:84%}
+.do,.dont{border-left-width:6px}
+.callout{background:transparent;border:1px solid var(--terra);padding:20px 22px}
+
+.sw{border-color:var(--line);border-radius:4px;transition:transform .18s var(--ease),box-shadow .18s var(--ease)}
+.sw .chip{height:124px}.sw .meta{padding:16px}
+.sw:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(26,26,26,.09)}
+.spec{padding:clamp(22px,4vw,42px)}
+.spec .row{padding:20px 0;border-color:var(--line)}
+
+.pattern-intro{gap:48px}
+.pattern-lead{font-size:1.16rem;line-height:1.7;color:#55514a}
+.pattern-master{margin-top:38px;border-color:#333;box-shadow:none}
+.pattern-role-grid{gap:16px}.pattern-role{padding:20px}
+.pattern-module-grid{gap:8px}.pattern-module figcaption{padding:12px 14px}
+.pattern-colourways{gap:18px}
+.pattern-family{border-color:#383838;transition:transform .18s var(--ease)}
+.pattern-family:hover{transform:translateY(-2px)}
+.pattern-application{border-color:var(--line);min-height:310px}
+.pattern-message{border-radius:3px;padding:18px;box-shadow:none}
+.pattern-downloads{background:var(--ink);padding:clamp(24px,4vw,38px)}
+.pattern-downloads p{color:#d5cec1}
+
+.dl{min-height:42px;border:1px solid #c9d4e6;border-radius:3px;padding:10px 15px;margin:6px 7px 0 0;transition:transform .18s var(--ease),background .18s var(--ease),border-color .18s var(--ease)}
+.dl:hover{transform:translateY(-2px);background:#e8eef8;border-color:var(--blue)}
+#downloads{background:var(--blue);color:#fff;border-top:0}
+#downloads .eyebrow{color:var(--gold)}
+#downloads h2{color:#fff}
+#downloads .sub,#downloads .note{color:#dbe5f5}
+#downloads .dl{background:#fff;color:var(--ink);border-color:#fff;font-weight:700}
+#downloads .dl:hover{background:var(--gold);border-color:var(--gold)}
+
+.footer-pattern{height:86px}
+footer{padding:54px 0;background:#111}
+
+@media(max-width:820px){
+ .hero-inner{min-height:560px;padding-top:56px}.hero-inner:after{right:-12px;bottom:36px;opacity:.65}
+ .hero-logo{width:min(620px,92vw)}
+ section{padding-block:72px}
+ .pattern-intro{gap:16px}
+ .pattern-application{min-height:240px}
+}
+@media(max-width:620px){
+ nav b{display:none}
+ nav .wrap{padding-inline:12px}
+ .hero-inner{min-height:520px;padding-top:44px;padding-bottom:52px}
+ .hero h1{font-size:clamp(3.25rem,16vw,4rem);max-width:100%}
+ .hero-logo{width:100%}
+ .hero-inner:after{width:90px}
+ .brand-ribbon{height:88px}
+ section h2{font-size:2.5rem}
+ .pattern-module-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>ITS Africa Conference 2027</b>
+<a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Typography</a>
+<a href="#pattern">Pattern</a><a href="#partners">Partners</a><a href="#signature">Email signature</a><a href="#downloads">Downloads</a></div></nav>
+
+<header class="hero"><div class="wrap hero-inner">
+<span class="eyebrow">Brand Guidelines · v1.0</span>
+<img class="hero-logo" src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="ITS Africa Conference — Cape Town, 9–10 March 2027">
+<h1>Brand Guidelines</h1>
+<p class="sub">Everything you need to produce on-brand materials for the ITS Africa Conference — Cape Town, 9–10 March 2027. Use the assets exactly as supplied. You never need to choose a colour, font or layout: it's already decided here.</p>
+<div><span class="pill">Cape Town</span> <span class="pill gold">9–10 March 2027</span></div>
+</div></header>
+
+<div class="brand-ribbon" role="img" aria-label="ITS Africa modular geometric pattern in the original colourway"></div>
+
+<!-- LOGO -->
+<section id="logo"><div class="wrap">
+<span class="eyebrow">01 — Logo</span><h2>The logo</h2>
+<p class="sub">The "its" mark with the Africa Conference lockup. It comes in three layouts. Pick the one that fits your space; use the version made for your background.</p>
+<div class="grid three" style="margin-top:26px">
+<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="ITS Africa Conference 2027 logo — landscape layout"></div><h3 style="margin-top:12px">Landscape</h3><p class="note">Wide spaces: banners, email headers, website.</p></div>
+<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" alt="ITS Africa Conference 2027 logo — portrait layout" style="max-height:150px"></div><h3 style="margin-top:12px">Portrait</h3><p class="note">Tall/narrow spaces: posters, roll-ups, stories.</p></div>
+<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" alt="ITS Africa Conference 2027 logo — square layout"></div><h3 style="margin-top:12px">Square / stacked</h3><p class="note">Social avatars, tight square placements.</p></div>
+</div>
+<h3 style="margin:34px 0 14px">Backgrounds — use the right version</h3>
+<div class="grid four">
+<div><div class="logo-tile on-white"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black logo on a white background"></div><p class="note" style="text-align:center">On white</p></div>
+<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black logo on a cream background"></div><p class="note" style="text-align:center">On cream</p></div>
+<div><div class="logo-tile on-dark"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White logo on a dark background"></div><p class="note" style="text-align:center">On dark</p></div>
+<div><div class="logo-tile on-blue"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White logo on brand blue"></div><p class="note" style="text-align:center">On brand blue</p></div>
+</div>
+<div class="grid two" style="margin-top:30px">
+<div class="card do"><h3>Do</h3><ul class="clean">
+<li>Keep clear space around the logo — at least the height of the "i" dot on all sides.</li>
+<li>Use the black version on light backgrounds, the white version on dark/photo backgrounds.</li>
+<li>Scale it proportionally.</li></ul></div>
+<div class="card dont"><h3>Don't</h3><ul class="clean">
+<li>Don't stretch, squash, rotate or recolour it (colour versions are coming separately).</li>
+<li>Don't put the black logo on a dark background or a busy photo.</li>
+<li>Don't rebuild or retype the lockup — always use the supplied file.</li></ul></div>
+</div>
+<p class="callout" style="margin-top:22px"><b>Coming soon:</b> approved colour logo versions. Until then, use black or white.</p>
+</div></section>
+
+<!-- COLOUR -->
+<section id="colour"><div class="wrap">
+<span class="eyebrow">02 — Colour</span><h2>Colour palette</h2>
+<p class="sub">Drawn from the conference's African geometric pattern. Blue is the primary brand colour; gold is a highlight only. Click any swatch to copy its hex.</p>
+<div class="grid four" style="margin-top:26px" id="swatches"></div>
+<div class="grid two" style="margin-top:26px">
+<div class="card do"><h3>Do</h3><ul class="clean">
+<li>Backgrounds: cream or white. Text: black or dark grey.</li>
+<li>Use white text on blue, green or terracotta fills.</li>
+<li>One accent colour per item — let the pattern carry the full-colour energy.</li></ul></div>
+<div class="card dont"><h3>Don't</h3><ul class="clean">
+<li>Don't set body text in gold on white (too low contrast) — gold is for highlights only.</li>
+<li>Don't use all six colours at once in a layout.</li>
+<li>Don't put a colour behind body text.</li></ul></div>
+</div>
+<p class="note" style="margin-top:14px">These are the approved working values for the ITS Africa Conference identity. RGB is shown for screen use.</p>
+</div></section>
+
+<!-- TYPE -->
+<section id="type"><div class="wrap">
+<span class="eyebrow">03 — Typography</span><h2>Typography</h2>
+<p class="sub"><b>Montserrat</b> is the brand typeface for web, banners and designed communications. Microsoft Office templates use <b>Arial only</b> so documents remain consistent on every team's computer.</p>
+<div class="spec" style="margin-top:24px">
+<div class="row"><div class="lbl">Headline — Montserrat Black / Bold, tight</div><div style="font-weight:900;letter-spacing:-.02em;font-size:clamp(2rem,5vw,3rem)">Connect. Deploy. Move Africa.</div></div>
+<div class="row"><div class="lbl">Subheading — Montserrat SemiBold</div><div style="font-weight:600;font-size:1.35rem">Cape Town · 9–10 March 2027</div></div>
+<div class="row"><div class="lbl">Body — Montserrat Regular / Medium</div><div style="font-weight:400;font-size:1rem;max-width:60ch">This is body copy. Keep it black or dark grey on a light background, around 16px, with comfortable line spacing. Montserrat Regular for running text, Medium for light emphasis.</div></div>
+<div class="row"><div class="lbl">Label / eyebrow — Montserrat SemiBold, uppercase</div><div style="font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--grey)">Programme · Speakers · Partners</div></div>
+</div>
+<h3 style="margin:34px 0 6px">Headline colour</h3>
+<p class="note" style="margin-bottom:16px">Ink is the default headline colour. Cobalt may be used for short accents, while body copy always stays ink or dark grey on a light background.</p>
+<div class="grid three" id="typecolours"></div>
+<div class="grid two" style="margin-top:22px">
+<div class="card"><h3>Brand font</h3><p class="note">Use Montserrat for designed brand communications, websites, banners and social assets.</p><a class="dl" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Get Montserrat</a></div>
+<div class="card"><h3>Microsoft Office</h3><p class="note">Word and PowerPoint templates use <b>Arial only</b>. Do not substitute Calibri, Cambria or another font.</p></div>
+</div>
+</div></section>
+
+<!-- APPROVED PATTERN SYSTEM -->
+<section id="pattern"><div class="wrap">
+<div class="pattern-intro">
+<div><span class="eyebrow">04 — Pattern</span><h2>The modular pattern system</h2>
+<p class="pattern-lead">A five-module geometric sequence inspired by Southern African visual traditions. The construction is fixed; colour moves through four coordinated roles to create 24 approved families without breaking continuity.</p></div>
+<p class="note">Use the pattern as a confident brand device: cropped as a band for structure, isolated into square modules, or full-bleed for atmosphere — with text always on a solid panel, never directly on the pattern. Always preserve its grid and sequence.</p>
+</div>
+
+<div class="pattern-master">
+<img src="assets/pattern/outputs/row-1-colorway-system/a-original/a-original-master-strip.svg" alt="Original five-module pattern sequence">
+<div class="pattern-caption"><span>Canonical sequence · 1—2—3—4—5</span><span>Continuous horizontal repeat</span></div>
+</div>
+
+<h3 class="pattern-subhead">Colour roles</h3>
+<p class="note">Cream and ink stay fixed. The four chromatic colours rotate through these roles, with every colour used exactly once in each family.</p>
+<div class="pattern-role-grid">
+<div class="pattern-role"><i style="background:var(--terra)"></i><b>Lead field</b><span>Flows from Module 1 into Module 2</span></div>
+<div class="pattern-role"><i style="background:var(--gold)"></i><b>Diamond accent</b><span>Primary focal detail in Module 1</span></div>
+<div class="pattern-role"><i style="background:var(--blue)"></i><b>Interlock A</b><span>Opposing forms in Module 3</span></div>
+<div class="pattern-role"><i style="background:var(--green)"></i><b>Interlock B</b><span>Opposing forms in Module 5</span></div>
+</div>
+
+<h3 class="pattern-subhead">The five modules</h3>
+<p class="note">Modules may be cropped individually, but the full repeat always follows this order. Never redraw, stretch or change an anchor point.</p>
+<div class="pattern-module-grid">
+<figure class="pattern-module"><img src="assets/pattern/outputs/row-1-colorway-system/a-original/modules/module-1a.svg" alt="Pattern module 1"><figcaption>01 · Lead</figcaption></figure>
+<figure class="pattern-module"><img src="assets/pattern/outputs/row-1-colorway-system/a-original/modules/module-2a.svg" alt="Pattern module 2"><figcaption>02 · Transition</figcaption></figure>
+<figure class="pattern-module"><img src="assets/pattern/outputs/row-1-colorway-system/a-original/modules/module-3a.svg" alt="Pattern module 3"><figcaption>03 · Interlock A</figcaption></figure>
+<figure class="pattern-module"><img src="assets/pattern/outputs/row-1-colorway-system/a-original/modules/module-4a.svg" alt="Pattern module 4"><figcaption>04 · Bridge</figcaption></figure>
+<figure class="pattern-module"><img src="assets/pattern/outputs/row-1-colorway-system/a-original/modules/module-5a.svg" alt="Pattern module 5"><figcaption>05 · Interlock B</figcaption></figure>
+</div>
+
+<h3 class="pattern-subhead">The 24 approved colourways</h3>
+<p class="note">The code reads Lead / Diamond / Interlock A / Interlock B. T = terracotta, Y = yellow, B = blue and G = green. Use one complete same-letter family at a time.</p>
+<div class="pattern-colourways" id="patternColourways"></div>
+
+<h3 class="pattern-subhead">Application examples</h3>
+<div class="pattern-examples">
+<div class="pattern-application a"><div class="pattern-message"><b>Move Africa.</b><span>Full pattern · original family</span></div></div>
+<div class="pattern-application b"><div class="pattern-message"><b>Cape Town</b><span>Green-led family · cropped field</span></div></div>
+<div class="pattern-application d"><div class="pattern-message"><b>9—10 March 2027</b><span>Yellow-led family · high-energy moment</span></div></div>
+</div>
+
+<div class="grid two" style="margin-top:24px">
+<div class="card do"><h3>Do</h3><ul class="clean"><li>Use the supplied SVG or PNG artwork.</li><li>Keep the 1—2—3—4—5 sequence intact.</li><li>Choose one same-letter colour family per composition.</li><li>Crop on the square module grid.</li></ul></div>
+<div class="card dont"><h3>Don't</h3><ul class="clean"><li>Don't recolour individual modules independently.</li><li>Don't mix suffixes unless a new seam has been approved.</li><li>Don't distort, rotate or move anchor points.</li><li>Don't place running text directly over a busy pattern.</li></ul></div>
+</div>
+
+<div class="pattern-downloads"><h3>Pattern assets</h3><p>Download the complete system or inspect the role map before building a layout.</p>
+<a class="dl" href="assets/pattern/outputs/row-1-colorway-system.zip" download>Complete system · ZIP</a>
+<a class="dl" href="assets/pattern/outputs/row-1-colorway-system/row-1-colorways-comparison.png" download>24-family catalogue · PNG</a>
+<a class="dl" href="assets/pattern/outputs/row-1-colorway-system/manifest.json" download>Compatibility manifest · JSON</a></div>
+</div></section>
+
+<!-- PARTNERS -->
+<section id="partners"><div class="wrap">
+<span class="eyebrow">05 — Partner lockup</span><h2>Organiser &amp; partner lockup</h2>
+<p class="sub">The standard footer lockup for official communications: Organised by, Hosted by, Content Partner. Use this exact arrangement and spacing.</p>
+<div class="card" style="margin-top:22px;padding:14px"><img src="assets/banners/ITSAC27_organiser-banner_with-event-logo_2x.png" alt="Organiser banner" style="width:100%;border-radius:8px"></div>
+<div class="grid three" style="margin-top:22px">
+<div class="card"><div class="lbl">Organised by</div><div class="logo-tile on-white" style="min-height:90px"><img src="assets/logos/partners%20logo/ITS%20Global/its-global-dark-landscape.svg" alt="ITS Global" style="max-height:56px"></div></div>
+<div class="card"><div class="lbl">Hosted by</div><div class="logo-tile on-white" style="min-height:90px"><img src="assets/logos/partners%20logo/City%20of%20Cape%20Town/city-of-cape-town-colour-landscape.svg" alt="City of Cape Town" style="max-height:70px"></div></div>
+<div class="card"><div class="lbl">Content Partner</div><div class="logo-tile on-white" style="min-height:90px"><img src="assets/logos/partners%20logo/Ertico/ERTICO-colour%26black-notagline.svg" alt="ERTICO – ITS Europe" style="max-height:56px"></div></div>
+</div>
+</div></section>
+
+<!-- EMAIL SIGNATURE -->
+<section id="signature"><div class="wrap">
+<span class="eyebrow">06 — Email signature</span><h2>A ready-to-copy example</h2>
+<p class="sub">The signature uses the approved event logo, partner hierarchy, contact styling and blue-led pattern. Open the example, copy the rendered signature and paste it into Outlook or Gmail.</p>
+<div class="card" style="margin-top:22px;padding:0;overflow:hidden">
+<iframe src="downloads/itsac-email-signature-example.html" title="ITSAC email signature example" style="display:block;width:100%;height:430px;border:0;background:#fff"></iframe>
+</div>
+<div style="margin-top:16px"><a class="dl" href="downloads/itsac-email-signature-example.html" target="_blank">Open email signature example</a></div>
+</div></section>
+
+<!-- DOWNLOADS -->
+<section id="downloads"><div class="wrap">
+<span class="eyebrow">07 — Downloads</span><h2>Grab the files</h2>
+<p class="sub">Logo exports, organiser banner and the complete modular pattern system live in the project's assets folder. Open the file you need for your background and layout.</p>
+<div style="margin-top:16px">
+<a class="dl" href="assets/logos/ITSAC 2027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>Landscape · black</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>Landscape · black · transparent</a>
+<a class="dl" href="assets/logos/ITSAC 2027/Exports/ITSAC27-Logo-Landscape-White.png" download>Landscape · white</a>
+<a class="dl" href="assets/logos/ITSAC 2027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Portrait · black</a>
+<a class="dl" href="assets/logos/ITSAC 2027/Exports/ITSAC27-Logo-Square-Standard.png" download>Square · black</a>
+<a class="dl" href="assets/logos/ITSAC 2027/Exports/ITSAC27-Logo-Square-White.png" download>Square · white</a>
+<a class="dl" href="assets/banners/ITSAC27_organiser-banner_with-event-logo_2x.png" download>Organiser banner</a>
+<a class="dl" href="assets/pattern/outputs/row-1-colorway-system.zip" download>Pattern system · 24 families</a>
+<a class="dl" href="assets/pattern/outputs/row-1-colorway-system/row-1-colorways-comparison.png" download>Pattern catalogue</a>
+<a class="dl" href="downloads/ITSAC27-Letter-Template.dotx" download>Word letter template · DOTX</a>
+<a class="dl" href="downloads/ITSAC27-Letter-Template.docx" download>Word letter example · DOCX</a>
+<a class="dl" href="downloads/itsac-email-signature-example.html" target="_blank">Email signature example</a>
+</div>
+<p class="note" style="margin-top:14px">For a new person's signature, replace only the name, role and direct contact details in the approved example.</p>
+</div></section>
+
+<div class="footer-pattern" role="img" aria-label="Blue-led ITS Africa modular pattern"></div>
+<footer><div class="wrap">
+<b style="color:#fff">ITS Africa Conference 2027</b> · Cape Town · 9–10 March 2027<br>
+Brand guidelines · Organised by ITS Global · Hosted by City of Cape Town · Content Partner ERTICO<br>
+<span style="color:#8c8578">Questions? Contact Riccardo Calabrese, ERTICO.</span>
+</div></footer>
+
+<div class="copyhint" id="hint">Copied</div>
+<script>
+const pal=[
+ ["Cream","#F2EBDA","242, 235, 218","var(--ink)"],
+ ["Ink / Black","#1A1A1A","26, 26, 26","#fff"],
+ ["Cobalt Blue","#1E4C9A","30, 76, 154","#fff"],
+ ["Emerald Green","#2E7D4F","46, 125, 79","#fff"],
+ ["Terracotta","#BE4A2F","190, 74, 47","#fff"],
+ ["Gold","#E8B93B","232, 185, 59","var(--ink)"],
+ ["Grey","#54565B","84, 86, 91","#fff"],
+ ["White","#FFFFFF","255, 255, 255","var(--ink)"]
+];
+// headline colour options
+const tc=[
+ ["Ink on cream","#1A1A1A","var(--cream)","1px solid #e2d9c4"],
+ ["Cobalt blue on cream","#1E4C9A","var(--cream)","1px solid #e2d9c4"],
+ ["Emerald green on cream","#2E7D4F","var(--cream)","1px solid #e2d9c4"],
+ ["Terracotta on cream","#BE4A2F","var(--cream)","1px solid #e2d9c4"],
+ ["White on blue","#FFFFFF","#1E4C9A","0"],
+ ["Gold on ink","#E8B93B","#1A1A1A","0"]
+];
+const tcw=document.getElementById('typecolours');
+tc.forEach(([n,col,bg,bd])=>{
+ const d=document.createElement('div');
+ d.style.cssText=`border-radius:16px;padding:24px;background:${bg};border:${bd};display:flex;flex-direction:column;gap:10px;min-height:150px;justify-content:center`;
+ d.innerHTML=`<div style="font-weight:900;letter-spacing:-.02em;font-size:1.7rem;line-height:1.05;color:${col}">Move Africa.</div><div style="font-weight:600;font-size:.9rem;color:${col};opacity:.9">Cape Town · March 2027</div><div style="font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;color:${col};opacity:.65">${n}</div>`;
+ tcw.appendChild(d);
+});
+const wrap=document.getElementById('swatches');
+pal.forEach(([n,hex,rgb,tc])=>{
+ const d=document.createElement('div');d.className='sw';
+ d.innerHTML=`<div class="chip" style="background:${hex}"></div><div class="meta"><b>${n}</b><span>${hex} · rgb(${rgb})</span></div>`;
+ d.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(hex);const h=document.getElementById('hint');h.textContent='Copied '+hex;h.classList.add('show');setTimeout(()=>h.classList.remove('show'),1100);};
+ wrap.appendChild(d);
+});
+const patternFamilies=[
+ ["A","Original / terracotta-led","a-original","T/Y/B/G"],["B","Green-led","b-green-led","G/Y/B/T"],
+ ["C","Blue-led","c-blue-led","B/Y/G/T"],["D","Yellow-led","d-yellow-led","Y/B/T/G"],
+ ["E","","e-terracotta-yellow-green-blue","T/Y/G/B"],["F","","f-terracotta-blue-yellow-green","T/B/Y/G"],
+ ["G","","g-terracotta-blue-green-yellow","T/B/G/Y"],["H","","h-terracotta-green-yellow-blue","T/G/Y/B"],
+ ["I","","i-terracotta-green-blue-yellow","T/G/B/Y"],["J","","j-yellow-terracotta-blue-green","Y/T/B/G"],
+ ["K","","k-yellow-terracotta-green-blue","Y/T/G/B"],["L","","l-yellow-blue-green-terracotta","Y/B/G/T"],
+ ["M","","m-yellow-green-terracotta-blue","Y/G/T/B"],["N","","n-yellow-green-blue-terracotta","Y/G/B/T"],
+ ["O","","o-blue-terracotta-yellow-green","B/T/Y/G"],["P","","p-blue-terracotta-green-yellow","B/T/G/Y"],
+ ["Q","","q-blue-yellow-terracotta-green","B/Y/T/G"],["R","","r-blue-green-terracotta-yellow","B/G/T/Y"],
+ ["S","","s-blue-green-yellow-terracotta","B/G/Y/T"],["T","","t-green-terracotta-yellow-blue","G/T/Y/B"],
+ ["U","","u-green-terracotta-blue-yellow","G/T/B/Y"],["V","","v-green-yellow-terracotta-blue","G/Y/T/B"],
+ ["W","","w-green-blue-terracotta-yellow","G/B/T/Y"],["X","","x-green-blue-yellow-terracotta","G/B/Y/T"]
+];
+const patternGrid=document.getElementById('patternColourways');
+patternFamilies.forEach(([letter,name,slug,code])=>{
+ const figure=document.createElement('figure');figure.className='pattern-family';
+ figure.innerHTML=`<img loading="lazy" src="assets/pattern/outputs/row-1-colorway-system/${slug}/${slug}-master-strip.svg" alt="Pattern colourway ${letter}, ${code}"><figcaption><b>${letter} · ${code}</b><span>${name||'Approved permutation'}</span></figcaption>`;
+ patternGrid.appendChild(figure);
+});
+</script>
+</body></html>

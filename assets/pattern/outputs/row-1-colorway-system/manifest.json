@@ -1,0 +1,1033 @@
+{
+  "system": "row-1-colorway-system",
+  "colorway_count": 24,
+  "module_count": 120,
+  "module_size": 240,
+  "sequence": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "fixed_neutrals": {
+    "cream": "#F2EBDA",
+    "ink": "#1A1A1A"
+  },
+  "role_order": [
+    "lead",
+    "diamond-accent",
+    "interlock-a",
+    "interlock-b"
+  ],
+  "colorways": {
+    "a-original": {
+      "label": "A \u00b7 Original / terracotta-led",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1a",
+        "module-2a",
+        "module-3a",
+        "module-4a",
+        "module-5a"
+      ],
+      "valid_sequence": [
+        "1a",
+        "2a",
+        "3a",
+        "4a",
+        "5a"
+      ],
+      "wraps_to": "1a"
+    },
+    "b-green-led": {
+      "label": "B \u00b7 Green-led",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1b",
+        "module-2b",
+        "module-3b",
+        "module-4b",
+        "module-5b"
+      ],
+      "valid_sequence": [
+        "1b",
+        "2b",
+        "3b",
+        "4b",
+        "5b"
+      ],
+      "wraps_to": "1b"
+    },
+    "c-blue-led": {
+      "label": "C \u00b7 Blue-led",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1c",
+        "module-2c",
+        "module-3c",
+        "module-4c",
+        "module-5c"
+      ],
+      "valid_sequence": [
+        "1c",
+        "2c",
+        "3c",
+        "4c",
+        "5c"
+      ],
+      "wraps_to": "1c"
+    },
+    "d-yellow-led": {
+      "label": "D \u00b7 Yellow-led",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1d",
+        "module-2d",
+        "module-3d",
+        "module-4d",
+        "module-5d"
+      ],
+      "valid_sequence": [
+        "1d",
+        "2d",
+        "3d",
+        "4d",
+        "5d"
+      ],
+      "wraps_to": "1d"
+    },
+    "e-terracotta-yellow-green-blue": {
+      "label": "E \u00b7 T/Y/G/B",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1e",
+        "module-2e",
+        "module-3e",
+        "module-4e",
+        "module-5e"
+      ],
+      "valid_sequence": [
+        "1e",
+        "2e",
+        "3e",
+        "4e",
+        "5e"
+      ],
+      "wraps_to": "1e"
+    },
+    "f-terracotta-blue-yellow-green": {
+      "label": "F \u00b7 T/B/Y/G",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1f",
+        "module-2f",
+        "module-3f",
+        "module-4f",
+        "module-5f"
+      ],
+      "valid_sequence": [
+        "1f",
+        "2f",
+        "3f",
+        "4f",
+        "5f"
+      ],
+      "wraps_to": "1f"
+    },
+    "g-terracotta-blue-green-yellow": {
+      "label": "G \u00b7 T/B/G/Y",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1g",
+        "module-2g",
+        "module-3g",
+        "module-4g",
+        "module-5g"
+      ],
+      "valid_sequence": [
+        "1g",
+        "2g",
+        "3g",
+        "4g",
+        "5g"
+      ],
+      "wraps_to": "1g"
+    },
+    "h-terracotta-green-yellow-blue": {
+      "label": "H \u00b7 T/G/Y/B",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1h",
+        "module-2h",
+        "module-3h",
+        "module-4h",
+        "module-5h"
+      ],
+      "valid_sequence": [
+        "1h",
+        "2h",
+        "3h",
+        "4h",
+        "5h"
+      ],
+      "wraps_to": "1h"
+    },
+    "i-terracotta-green-blue-yellow": {
+      "label": "I \u00b7 T/G/B/Y",
+      "role_map": {
+        "#BE4A2F": "#BE4A2F",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1i",
+        "module-2i",
+        "module-3i",
+        "module-4i",
+        "module-5i"
+      ],
+      "valid_sequence": [
+        "1i",
+        "2i",
+        "3i",
+        "4i",
+        "5i"
+      ],
+      "wraps_to": "1i"
+    },
+    "j-yellow-terracotta-blue-green": {
+      "label": "J \u00b7 Y/T/B/G",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1j",
+        "module-2j",
+        "module-3j",
+        "module-4j",
+        "module-5j"
+      ],
+      "valid_sequence": [
+        "1j",
+        "2j",
+        "3j",
+        "4j",
+        "5j"
+      ],
+      "wraps_to": "1j"
+    },
+    "k-yellow-terracotta-green-blue": {
+      "label": "K \u00b7 Y/T/G/B",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1k",
+        "module-2k",
+        "module-3k",
+        "module-4k",
+        "module-5k"
+      ],
+      "valid_sequence": [
+        "1k",
+        "2k",
+        "3k",
+        "4k",
+        "5k"
+      ],
+      "wraps_to": "1k"
+    },
+    "l-yellow-blue-green-terracotta": {
+      "label": "L \u00b7 Y/B/G/T",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1l",
+        "module-2l",
+        "module-3l",
+        "module-4l",
+        "module-5l"
+      ],
+      "valid_sequence": [
+        "1l",
+        "2l",
+        "3l",
+        "4l",
+        "5l"
+      ],
+      "wraps_to": "1l"
+    },
+    "m-yellow-green-terracotta-blue": {
+      "label": "M \u00b7 Y/G/T/B",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1m",
+        "module-2m",
+        "module-3m",
+        "module-4m",
+        "module-5m"
+      ],
+      "valid_sequence": [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m"
+      ],
+      "wraps_to": "1m"
+    },
+    "n-yellow-green-blue-terracotta": {
+      "label": "N \u00b7 Y/G/B/T",
+      "role_map": {
+        "#BE4A2F": "#E8B93B",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1n",
+        "module-2n",
+        "module-3n",
+        "module-4n",
+        "module-5n"
+      ],
+      "valid_sequence": [
+        "1n",
+        "2n",
+        "3n",
+        "4n",
+        "5n"
+      ],
+      "wraps_to": "1n"
+    },
+    "o-blue-terracotta-yellow-green": {
+      "label": "O \u00b7 B/T/Y/G",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1o",
+        "module-2o",
+        "module-3o",
+        "module-4o",
+        "module-5o"
+      ],
+      "valid_sequence": [
+        "1o",
+        "2o",
+        "3o",
+        "4o",
+        "5o"
+      ],
+      "wraps_to": "1o"
+    },
+    "p-blue-terracotta-green-yellow": {
+      "label": "P \u00b7 B/T/G/Y",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#2E7D4F",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1p",
+        "module-2p",
+        "module-3p",
+        "module-4p",
+        "module-5p"
+      ],
+      "valid_sequence": [
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "5p"
+      ],
+      "wraps_to": "1p"
+    },
+    "q-blue-yellow-terracotta-green": {
+      "label": "Q \u00b7 B/Y/T/G",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#2E7D4F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        }
+      },
+      "modules": [
+        "module-1q",
+        "module-2q",
+        "module-3q",
+        "module-4q",
+        "module-5q"
+      ],
+      "valid_sequence": [
+        "1q",
+        "2q",
+        "3q",
+        "4q",
+        "5q"
+      ],
+      "wraps_to": "1q"
+    },
+    "r-blue-green-terracotta-yellow": {
+      "label": "R \u00b7 B/G/T/Y",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1r",
+        "module-2r",
+        "module-3r",
+        "module-4r",
+        "module-5r"
+      ],
+      "valid_sequence": [
+        "1r",
+        "2r",
+        "3r",
+        "4r",
+        "5r"
+      ],
+      "wraps_to": "1r"
+    },
+    "s-blue-green-yellow-terracotta": {
+      "label": "S \u00b7 B/G/Y/T",
+      "role_map": {
+        "#BE4A2F": "#1E4C9A",
+        "#E8B93B": "#2E7D4F",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "diamond-accent": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1s",
+        "module-2s",
+        "module-3s",
+        "module-4s",
+        "module-5s"
+      ],
+      "valid_sequence": [
+        "1s",
+        "2s",
+        "3s",
+        "4s",
+        "5s"
+      ],
+      "wraps_to": "1s"
+    },
+    "t-green-terracotta-yellow-blue": {
+      "label": "T \u00b7 G/T/Y/B",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1t",
+        "module-2t",
+        "module-3t",
+        "module-4t",
+        "module-5t"
+      ],
+      "valid_sequence": [
+        "1t",
+        "2t",
+        "3t",
+        "4t",
+        "5t"
+      ],
+      "wraps_to": "1t"
+    },
+    "u-green-terracotta-blue-yellow": {
+      "label": "U \u00b7 G/T/B/Y",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#BE4A2F",
+        "#1E4C9A": "#1E4C9A",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-a": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1u",
+        "module-2u",
+        "module-3u",
+        "module-4u",
+        "module-5u"
+      ],
+      "valid_sequence": [
+        "1u",
+        "2u",
+        "3u",
+        "4u",
+        "5u"
+      ],
+      "wraps_to": "1u"
+    },
+    "v-green-yellow-terracotta-blue": {
+      "label": "V \u00b7 G/Y/T/B",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#E8B93B",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#1E4C9A"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        }
+      },
+      "modules": [
+        "module-1v",
+        "module-2v",
+        "module-3v",
+        "module-4v",
+        "module-5v"
+      ],
+      "valid_sequence": [
+        "1v",
+        "2v",
+        "3v",
+        "4v",
+        "5v"
+      ],
+      "wraps_to": "1v"
+    },
+    "w-green-blue-terracotta-yellow": {
+      "label": "W \u00b7 G/B/T/Y",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#BE4A2F",
+        "#2E7D4F": "#E8B93B"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        },
+        "interlock-b": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        }
+      },
+      "modules": [
+        "module-1w",
+        "module-2w",
+        "module-3w",
+        "module-4w",
+        "module-5w"
+      ],
+      "valid_sequence": [
+        "1w",
+        "2w",
+        "3w",
+        "4w",
+        "5w"
+      ],
+      "wraps_to": "1w"
+    },
+    "x-green-blue-yellow-terracotta": {
+      "label": "X \u00b7 G/B/Y/T",
+      "role_map": {
+        "#BE4A2F": "#2E7D4F",
+        "#E8B93B": "#1E4C9A",
+        "#1E4C9A": "#E8B93B",
+        "#2E7D4F": "#BE4A2F"
+      },
+      "role_assignments": {
+        "lead": {
+          "name": "green",
+          "hex": "#2E7D4F"
+        },
+        "diamond-accent": {
+          "name": "blue",
+          "hex": "#1E4C9A"
+        },
+        "interlock-a": {
+          "name": "yellow",
+          "hex": "#E8B93B"
+        },
+        "interlock-b": {
+          "name": "terracotta",
+          "hex": "#BE4A2F"
+        }
+      },
+      "modules": [
+        "module-1x",
+        "module-2x",
+        "module-3x",
+        "module-4x",
+        "module-5x"
+      ],
+      "valid_sequence": [
+        "1x",
+        "2x",
+        "3x",
+        "4x",
+        "5x"
+      ],
+      "wraps_to": "1x"
+    }
+  }
+}

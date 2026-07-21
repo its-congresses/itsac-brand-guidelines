@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Module 5g · G · T/B/G/Y">
+  <defs><clipPath id="tile"><rect width="240" height="240"/></clipPath></defs>
+  <g clip-path="url(#tile)" transform="translate(-960 0)">
+    <svg width="1200" height="240" viewBox="0 0 1200 240">
+
+  <title>G · T/B/G/Y</title>
+  <rect width="1200" height="240" fill="#F2EBDA"/>
+  <path d="M0 0H240L360 120 240 240H0L120 120Z" fill="#BE4A2F"/>
+  <path d="M240 0H360L480 120 360 240H240L360 120Z" fill="#1A1A1A"/>
+  <path d="M360 0H480L600 120 480 240H360L480 120Z" fill="#F2EBDA"/>
+  <path d="M480 0H720L600 120 720 240H480L600 120Z" fill="#2E7D4F"/>
+  <path d="M720 0H840L960 120 840 240H720L840 120Z" fill="#1A1A1A"/>
+  <path d="M840 0H960L1080 120 960 240H840L960 120Z" fill="#F2EBDA"/>
+  <path d="M960 0H1200L1080 120 1200 240H960L1080 120Z" fill="#E8B93B"/>
+  <path d="M120 40L200 120 120 200 40 120Z" fill="#1E4C9A"/>
+  <path d="M600 40L680 120 600 200 520 120Z" fill="#F2EBDA"/>
+  <path d="M1080 40L1160 120 1080 200 1000 120Z" fill="#F2EBDA"/>
+
+    </svg>
+  </g>
+</svg>
