@@ -179,6 +179,16 @@ h3{letter-spacing:-.015em}
 #downloads .dl{background:#fff;color:var(--ink);border-color:#fff;font-weight:700}
 #downloads .dl:hover{background:var(--gold);border-color:var(--gold)}
 
+.bgboard{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,18px)}
+.bgtile{margin:0;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.bgpanel{display:flex;align-items:center;justify-content:center;padding:22px;min-height:118px}
+.bgpanel img{max-width:86%;max-height:70px;object-fit:contain}
+.bgtile figcaption{padding:11px 14px;border-top:1px solid var(--line);font-size:.82rem}
+.bgtile figcaption b{display:block}
+.bgtile figcaption span{color:var(--grey);font-size:.74rem}
+.bgtile figcaption em{color:var(--blue);font-style:normal;font-weight:600}
+@media(max-width:820px){.bgboard{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.bgboard{grid-template-columns:1fr}}
 .footer-pattern{height:86px}
 footer{padding:54px 0;background:#111}
 
@@ -227,12 +237,24 @@ footer{padding:54px 0;background:#111}
 <div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" alt="ITS Africa Conference 2027 logo, portrait layout" style="max-height:150px"></div><h3 style="margin-top:12px">Portrait</h3><p class="note">Tall/narrow spaces: posters, roll-ups, stories.</p><div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>Black · transparent</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>White</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Black · white box</a></div></div>
 <div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" alt="ITS Africa Conference 2027 logo, square layout"></div><h3 style="margin-top:12px">Square / stacked</h3><p class="note">Social avatars, tight square placements.</p><div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>Black · transparent</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>White</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>Black · white box</a></div></div>
 </div>
-<h3 style="margin:34px 0 14px">Backgrounds: use the right version</h3>
-<div class="grid four">
-<div><div class="logo-tile on-white"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black logo on a white background"></div><p class="note" style="text-align:center">On white</p></div>
-<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black logo on a cream background"></div><p class="note" style="text-align:center">On cream</p></div>
-<div><div class="logo-tile on-dark"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White logo on a dark background"></div><p class="note" style="text-align:center">On dark</p></div>
-<div><div class="logo-tile on-blue"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White logo on brand blue"></div><p class="note" style="text-align:center">On brand blue</p></div>
+<h3 style="margin:40px 0 8px">Logo colour on each background</h3>
+<p class="note" style="margin-bottom:20px;max-width:70ch">The mark is <b>black on light backgrounds</b> (white, cream, gold) and <b>white on dark or vivid backgrounds</b> (ink, blue, green, terracotta, grey). On <b>cream only</b>, the mark may also be blue, green or terracotta. Gold and grey are never used as the mark colour.</p>
+<div class="bgboard">
+<figure class="bgtile"><div class="bgpanel" style="background:#FFFFFF;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on white"></div><figcaption><b>White</b><span>Black mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on cream"></div><figcaption><b>Cream</b><span>Black mark <em>· + accent</em></span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#E8B93B"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on gold"></div><figcaption><b>Gold</b><span>Black mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#1A1A1A"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on ink"></div><figcaption><b>Ink</b><span>White mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#1E4C9A"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on brand blue"></div><figcaption><b>Blue</b><span>White mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#2E7D4F"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on green"></div><figcaption><b>Green</b><span>White mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#BE4A2F"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on terracotta"></div><figcaption><b>Terracotta</b><span>White mark</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#54565B"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on grey"></div><figcaption><b>Grey</b><span>White mark</span></figcaption></figure>
+</div>
+<h3 style="margin:36px 0 8px">Cream accent</h3>
+<p class="note" style="margin-bottom:16px;max-width:70ch">On the cream background <b>only</b>, the mark may also be set in blue, green or terracotta. Nowhere else, and never in gold or grey.</p>
+<div class="grid three">
+<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Blue.png" alt="Blue mark on cream"></div><figcaption><b>Blue on cream</b><span>Accent</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Green.png" alt="Green mark on cream"></div><figcaption><b>Green on cream</b><span>Accent</span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Terracotta.png" alt="Terracotta mark on cream"></div><figcaption><b>Terracotta on cream</b><span>Accent</span></figcaption></figure>
 </div>
 <div class="grid two" style="margin-top:30px">
 <div class="card do"><h3>Do</h3><ul class="clean">
@@ -240,11 +262,10 @@ footer{padding:54px 0;background:#111}
 <li>Use the black version on light backgrounds, the white version on dark/photo backgrounds.</li>
 <li>Scale it proportionally.</li></ul></div>
 <div class="card dont"><h3>Don't</h3><ul class="clean">
-<li>Don't stretch, squash, rotate or recolour it (colour versions are coming separately).</li>
-<li>Don't put the black logo on a dark background or a busy photo.</li>
+<li>Don't recolour the mark outside the rules above (no gold or grey mark; colour marks are cream-only).</li>
+<li>Don't put the black mark on a dark background or a busy photo.</li>
 <li>Don't rebuild or retype the lockup — always use the supplied file.</li></ul></div>
 </div>
-<p class="callout" style="margin-top:22px"><b>Coming soon:</b> approved colour logo versions. Until then, use black or white.</p>
 </div></section>
 
 <!-- COLOUR -->
