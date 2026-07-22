@@ -195,6 +195,10 @@ h3{letter-spacing:-.015em}
 .bgtile figcaption b{display:block}
 .bgtile figcaption span{color:var(--grey);font-size:.74rem}
 .bgtile figcaption em{color:var(--blue);font-style:normal;font-weight:600}
+.lgmx{grid-template-columns:repeat(3,1fr)}
+.lgmx .bgpanel{min-height:170px;padding:24px}
+.lgmx .bgpanel img{max-height:120px;max-width:80%}
+@media(max-width:700px){.lgmx{grid-template-columns:1fr}}
 @media(max-width:820px){.bgboard{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:460px){.bgboard{grid-template-columns:1fr}}
 .footer-pattern{height:86px}
@@ -239,28 +243,39 @@ footer{padding:54px 0;background:#111}
 <!-- LOGO -->
 <section id="logo"><div class="wrap">
 <span class="eyebrow">01 · Logo</span><h2>The logo</h2>
-<p class="sub">The "its" mark with the Africa Conference lockup. It comes in three layouts. Pick the one that fits your space; use the version made for your background.</p>
-<div class="grid three" style="margin-top:26px">
-<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="ITS Africa Conference 2027 logo, landscape layout"></div><h3 style="margin-top:12px">Landscape</h3><p class="note">Wide spaces: banners, email headers, website.</p><div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>Black · transparent</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" download>White</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>Black · white box</a></div></div>
-<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" alt="ITS Africa Conference 2027 logo, portrait layout" style="max-height:150px"></div><h3 style="margin-top:12px">Portrait</h3><p class="note">Tall/narrow spaces: posters, roll-ups, stories.</p><div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>Black · transparent</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>White</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Black · white box</a></div></div>
-<div><div class="logo-tile on-cream"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" alt="ITS Africa Conference 2027 logo, square layout"></div><h3 style="margin-top:12px">Square / stacked</h3><p class="note">Social avatars, tight square placements.</p><div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>Black · transparent</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>White</a><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>Black · white box</a></div></div>
+<p class="sub">The "its" mark with the Africa Conference lockup. It comes in <b>three layouts</b> — landscape, portrait and square — and each layout is supplied in <b>three versions</b>: Standard, Transparent and Cut. Nine files. Pick the layout that fits your space, then the version your background needs.</p>
+<h3 style="margin:32px 0 8px">The three versions</h3>
+<p class="note" style="margin-bottom:20px;max-width:70ch"><b>Standard</b> — the mark on its solid white panel; drop it onto photos or colour where you need a clean white plate. <b>Transparent</b> — no background; comes in black (for light surfaces) and white (for dark or vivid surfaces). <b>Cut</b> — the wordmark alone with the "its" mark knocked out; special cases only, never a substitute for the full lockup.</p>
+
+<h3 style="margin:28px 0 8px" class="lgmx-row">Landscape</h3>
+<p class="note" style="margin-bottom:14px">Wide spaces: banners, email headers, website.</p>
+<div class="trboard lgmx">
+<figure class="trtile"><div class="bgpanel" style="background:#cfc7b4"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" alt="Landscape logo, standard version: black mark on white panel"></div><figcaption><b>Standard</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>Download PNG</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#F2EBDA;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Landscape logo, transparent version: black mark, no background"></div><figcaption><b>Transparent</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>Black</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" download>White</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#fff;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Cut.png" alt="Landscape logo, cut version: wordmark only"></div><figcaption><b>Cut</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Cut.png" download>Download PNG</a></span></figcaption></figure>
 </div>
 
-<h3 style="margin:40px 0 8px">Treatments</h3>
-<p class="note" style="margin-bottom:20px;max-width:70ch">Five ways the lockup is supplied. Each exists in all three layouts above. Pick by what your background needs.</p>
-<div class="trboard">
-<figure class="trtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Transparent treatment: black mark, no background"></div><figcaption><b>Transparent</b><span>Black mark, no background. The default, for white, cream and light surfaces.</span><span class="dls">Download: <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>landscape</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>portrait</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>square</a></span></figcaption></figure>
-<figure class="trtile"><div class="bgpanel" style="background:#1A1A1A"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="Knock-out treatment: white mark, no background"></div><figcaption><b>White (knock-out)</b><span>White mark, no background. For dark or vivid surfaces.</span><span class="dls">Download: <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" download>landscape</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>portrait</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>square</a></span></figcaption></figure>
-<figure class="trtile"><div class="bgpanel" style="background:#cfc7b4"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" alt="Standard treatment: black mark on a solid white panel"></div><figcaption><b>Standard (white panel)</b><span>Black mark on a solid white block. Drop it onto a photo or colour where you need a clean white plate.</span><span class="dls">Download: <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>landscape</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>portrait</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>square</a></span></figcaption></figure>
-<figure class="trtile"><div class="bgpanel" style="background:#cfc7b4"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Black.png" alt="Boxed treatment: white mark on a solid ink panel"></div><figcaption><b>Boxed (ink panel)</b><span>White mark on a solid ink block. A self-contained badge for busy or light backgrounds.</span><span class="dls">Download: <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Black.png" download>landscape</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Black.png" download>portrait</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Black.png" download>square</a></span></figcaption></figure>
-<figure class="trtile"><div class="bgpanel" style="background:#fff;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Cut.png" alt="Cut treatment: text only, its mark removed"></div><figcaption><b>Cut (text only)</b><span>The "its" mark is knocked out, leaving the wordmark alone. Special cases only, not a substitute for the full lockup.</span><span class="dls">Download: <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Cut.png" download>landscape</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Cut.png" download>portrait</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Cut.png" download>square</a></span></figcaption></figure>
+<h3 style="margin:28px 0 8px" class="lgmx-row">Portrait</h3>
+<p class="note" style="margin-bottom:14px">Tall/narrow spaces: posters, roll-ups, stories.</p>
+<div class="trboard lgmx">
+<figure class="trtile"><div class="bgpanel" style="background:#cfc7b4"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" alt="Portrait logo, standard version: black mark on white panel"></div><figcaption><b>Standard</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Download PNG</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#F2EBDA;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" alt="Portrait logo, transparent version: black mark, no background"></div><figcaption><b>Transparent</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>Black</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>White</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#fff;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Cut.png" alt="Portrait logo, cut version: wordmark only"></div><figcaption><b>Cut</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Cut.png" download>Download PNG</a></span></figcaption></figure>
+</div>
+
+<h3 style="margin:28px 0 8px" class="lgmx-row">Square / stacked</h3>
+<p class="note" style="margin-bottom:14px">Social avatars, tight square placements.</p>
+<div class="trboard lgmx">
+<figure class="trtile"><div class="bgpanel" style="background:#cfc7b4"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" alt="Square logo, standard version: black mark on white panel"></div><figcaption><b>Standard</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>Download PNG</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#F2EBDA;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" alt="Square logo, transparent version: black mark, no background"></div><figcaption><b>Transparent</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>Black</a> · <a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>White</a></span></figcaption></figure>
+<figure class="trtile"><div class="bgpanel" style="background:#fff;border-bottom:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Cut.png" alt="Square logo, cut version: wordmark only"></div><figcaption><b>Cut</b><span class="dls"><a href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Cut.png" download>Download PNG</a></span></figcaption></figure>
 </div>
 
 <h3 style="margin:40px 0 8px">Logo colour on each background</h3>
-<p class="note" style="margin-bottom:20px;max-width:70ch">The mark is <b>black on light backgrounds</b> (white, cream, gold) and <b>white on dark or vivid backgrounds</b> (ink, blue, green, terracotta, grey). On <b>cream only</b>, the mark may also be blue, green or terracotta. Gold and grey are never used as the mark colour.</p>
+<p class="note" style="margin-bottom:20px;max-width:70ch">The mark is only ever <b>black or white</b>. Use <b>black on light backgrounds</b> (white, cream, gold) and <b>white on dark or vivid backgrounds</b> (ink, blue, green, terracotta, grey). Never set the mark in any other colour.</p>
 <div class="bgboard">
 <figure class="bgtile"><div class="bgpanel" style="background:#FFFFFF;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on white"></div><figcaption><b>White</b><span>Black mark</span></figcaption></figure>
-<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on cream"></div><figcaption><b>Cream</b><span>Black mark <em>· + accent</em></span></figcaption></figure>
+<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on cream"></div><figcaption><b>Cream</b><span>Black mark</span></figcaption></figure>
 <figure class="bgtile"><div class="bgpanel" style="background:#E8B93B"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" alt="Black mark on gold"></div><figcaption><b>Gold</b><span>Black mark</span></figcaption></figure>
 <figure class="bgtile"><div class="bgpanel" style="background:#1A1A1A"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on ink"></div><figcaption><b>Ink</b><span>White mark</span></figcaption></figure>
 <figure class="bgtile"><div class="bgpanel" style="background:#1E4C9A"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on brand blue"></div><figcaption><b>Blue</b><span>White mark</span></figcaption></figure>
@@ -268,20 +283,13 @@ footer{padding:54px 0;background:#111}
 <figure class="bgtile"><div class="bgpanel" style="background:#BE4A2F"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on terracotta"></div><figcaption><b>Terracotta</b><span>White mark</span></figcaption></figure>
 <figure class="bgtile"><div class="bgpanel" style="background:#54565B"><img src="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" alt="White mark on grey"></div><figcaption><b>Grey</b><span>White mark</span></figcaption></figure>
 </div>
-<h3 style="margin:36px 0 8px">Cream accent</h3>
-<p class="note" style="margin-bottom:16px;max-width:70ch">On the cream background <b>only</b>, the mark may also be set in blue, green or terracotta. Nowhere else, and never in gold or grey.</p>
-<div class="grid three">
-<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Blue.png" alt="Blue mark on cream"></div><figcaption><b>Blue on cream</b><span>Accent</span></figcaption></figure>
-<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Green.png" alt="Green mark on cream"></div><figcaption><b>Green on cream</b><span>Accent</span></figcaption></figure>
-<figure class="bgtile"><div class="bgpanel" style="background:#F2EBDA;border:1px solid var(--line)"><img src="assets/logos/ITSAC%202027/Exports/colour/ITSAC27-Logo-Landscape-Terracotta.png" alt="Terracotta mark on cream"></div><figcaption><b>Terracotta on cream</b><span>Accent</span></figcaption></figure>
-</div>
 <div class="grid two" style="margin-top:30px">
 <div class="card do"><h3>Do</h3><ul class="clean">
 <li>Keep clear space around the logo: at least the height of the "i" dot on all sides.</li>
 <li>Use the black version on light backgrounds, the white version on dark/photo backgrounds.</li>
 <li>Scale it proportionally.</li></ul></div>
 <div class="card dont"><h3>Don't</h3><ul class="clean">
-<li>Don't recolour the mark outside the rules above (no gold or grey mark; colour marks are cream-only).</li>
+<li>Don't recolour the mark — it is only ever black or white.</li>
 <li>Don't put the black mark on a dark background or a busy photo.</li>
 <li>Don't rebuild or retype the lockup — always use the supplied file.</li></ul></div>
 </div>
@@ -416,17 +424,20 @@ footer{padding:54px 0;background:#111}
 <span class="eyebrow">07 · Downloads</span><h2>Grab the files</h2>
 <p class="sub">Everything in one place, grouped by element. The same buttons also appear next to each element in its own section.</p>
 <h3 style="margin:26px 0 4px">Logo · landscape</h3>
-<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>Black · transparent</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" download>White</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>Black · white box</a></div>
+<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Standard.png" download>Standard</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Transparent.png" download>Transparent · black</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-White.png" download>Transparent · white</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Landscape-Cut.png" download>Cut</a></div>
 <h3 style="margin:22px 0 4px">Logo · portrait</h3>
-<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>Black · transparent</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>White</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Black · white box</a></div>
+<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Standard.png" download>Standard</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Transparent.png" download>Transparent · black</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-White.png" download>Transparent · white</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Portrait-Cut.png" download>Cut</a></div>
 <h3 style="margin:22px 0 4px">Logo · square</h3>
-<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>Black · transparent</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>White</a>
-<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>Black · white box</a></div>
+<div><a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Standard.png" download>Standard</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Transparent.png" download>Transparent · black</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-White.png" download>Transparent · white</a>
+<a class="dl" href="assets/logos/ITSAC%202027/Exports/ITSAC27-Logo-Square-Cut.png" download>Cut</a></div>
 <h3 style="margin:22px 0 4px">Organiser &amp; partner banner</h3>
 <div><a class="dl" href="assets/banners/ITSAC27_organiser-banner_2x.png" download>Banner · PNG 2x</a>
 <a class="dl" href="assets/banners/ITSAC27_organiser-banner.png" download>Banner · PNG 1x</a></div>
